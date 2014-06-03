@@ -21,6 +21,11 @@
 		38144B1D193B47C000C7ED3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38144AFF193B47C000C7ED3E /* UIKit.framework */; };
 		38144B25193B47C000C7ED3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38144B23193B47C000C7ED3E /* InfoPlist.strings */; };
 		38144B27193B47C000C7ED3E /* BoobieClickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38144B26193B47C000C7ED3E /* BoobieClickerTests.m */; };
+		38144B33193B4BEF00C7ED3E /* boobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 38144B32193B4BEF00C7ED3E /* boobie.png */; };
+		3893B6E0193E46200061C7D0 /* BoobieShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3893B6DF193E46200061C7D0 /* BoobieShop.plist */; };
+		3897D157193D070F007FCA8C /* BoobieShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897D156193D070F007FCA8C /* BoobieShopViewController.m */; };
+		3897D15B193D13B9007FCA8C /* BoobieShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897D15A193D13B9007FCA8C /* BoobieShopTableViewCell.m */; };
+		38E95F71193B9AAA003F118F /* BoobieImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E95F70193B9AAA003F118F /* BoobieImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		38144B22193B47C000C7ED3E /* BoobieClickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoobieClickerTests-Info.plist"; sourceTree = "<group>"; };
 		38144B24193B47C000C7ED3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38144B26193B47C000C7ED3E /* BoobieClickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoobieClickerTests.m; sourceTree = "<group>"; };
+		38144B32193B4BEF00C7ED3E /* boobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobie.png; sourceTree = "<group>"; };
+		3893B6DF193E46200061C7D0 /* BoobieShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BoobieShop.plist; sourceTree = "<group>"; };
+		3897D155193D070F007FCA8C /* BoobieShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieShopViewController.h; sourceTree = "<group>"; };
+		3897D156193D070F007FCA8C /* BoobieShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieShopViewController.m; sourceTree = "<group>"; };
+		3897D159193D13B9007FCA8C /* BoobieShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieShopTableViewCell.h; sourceTree = "<group>"; };
+		3897D15A193D13B9007FCA8C /* BoobieShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieShopTableViewCell.m; sourceTree = "<group>"; };
+		38E95F6F193B9AAA003F118F /* BoobieImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieImageView.h; sourceTree = "<group>"; };
+		38E95F70193B9AAA003F118F /* BoobieImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieImageView.m; sourceTree = "<group>"; };
+		38E95F73193BA116003F118F /* BoobieImageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieImageViewDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +126,11 @@
 		38144B01193B47C000C7ED3E /* BoobieClicker */ = {
 			isa = PBXGroup;
 			children = (
-				38144B0A193B47C000C7ED3E /* BoobieClickerAppDelegate.h */,
-				38144B0B193B47C000C7ED3E /* BoobieClickerAppDelegate.m */,
-				38144B0D193B47C000C7ED3E /* Main.storyboard */,
-				38144B10193B47C000C7ED3E /* BoobieClickerViewController.h */,
-				38144B11193B47C000C7ED3E /* BoobieClickerViewController.m */,
+				38144B30193B47CF00C7ED3E /* App Files */,
+				38144B31193B47DC00C7ED3E /* ViewControllers */,
+				38E95F72193B9F70003F118F /* Boobies */,
+				3897D158193D1363007FCA8C /* BoobieShop */,
+				3893B6E1193E4AD90061C7D0 /* Resources */,
 				38144B13193B47C000C7ED3E /* Images.xcassets */,
 				38144B02193B47C000C7ED3E /* Supporting Files */,
 			);
@@ -150,6 +164,55 @@
 				38144B23193B47C000C7ED3E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38144B30193B47CF00C7ED3E /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				38144B0D193B47C000C7ED3E /* Main.storyboard */,
+				38144B0A193B47C000C7ED3E /* BoobieClickerAppDelegate.h */,
+				38144B0B193B47C000C7ED3E /* BoobieClickerAppDelegate.m */,
+			);
+			name = "App Files";
+			sourceTree = "<group>";
+		};
+		38144B31193B47DC00C7ED3E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				38144B10193B47C000C7ED3E /* BoobieClickerViewController.h */,
+				38144B11193B47C000C7ED3E /* BoobieClickerViewController.m */,
+				3897D155193D070F007FCA8C /* BoobieShopViewController.h */,
+				3897D156193D070F007FCA8C /* BoobieShopViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3893B6E1193E4AD90061C7D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38144B32193B4BEF00C7ED3E /* boobie.png */,
+				3893B6DF193E46200061C7D0 /* BoobieShop.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3897D158193D1363007FCA8C /* BoobieShop */ = {
+			isa = PBXGroup;
+			children = (
+				3897D159193D13B9007FCA8C /* BoobieShopTableViewCell.h */,
+				3897D15A193D13B9007FCA8C /* BoobieShopTableViewCell.m */,
+			);
+			name = BoobieShop;
+			sourceTree = "<group>";
+		};
+		38E95F72193B9F70003F118F /* Boobies */ = {
+			isa = PBXGroup;
+			children = (
+				38E95F6F193B9AAA003F118F /* BoobieImageView.h */,
+				38E95F70193B9AAA003F118F /* BoobieImageView.m */,
+				38E95F73193BA116003F118F /* BoobieImageViewDelegate.h */,
+			);
+			name = Boobies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +263,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ignacio Raga Llorens";
 				TargetAttributes = {
+					38144AF7193B47C000C7ED3E = {
+						DevelopmentTeam = XZSJN7HDJ6;
+					};
 					38144B18193B47C000C7ED3E = {
 						TestTargetID = 38144AF7193B47C000C7ED3E;
 					};
@@ -229,7 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3893B6E0193E46200061C7D0 /* BoobieShop.plist in Resources */,
 				38144B14193B47C000C7ED3E /* Images.xcassets in Resources */,
+				38144B33193B4BEF00C7ED3E /* boobie.png in Resources */,
 				38144B06193B47C000C7ED3E /* InfoPlist.strings in Resources */,
 				38144B0F193B47C000C7ED3E /* Main.storyboard in Resources */,
 			);
@@ -250,9 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3897D157193D070F007FCA8C /* BoobieShopViewController.m in Sources */,
 				38144B0C193B47C000C7ED3E /* BoobieClickerAppDelegate.m in Sources */,
 				38144B08193B47C000C7ED3E /* main.m in Sources */,
+				3897D15B193D13B9007FCA8C /* BoobieShopTableViewCell.m in Sources */,
 				38144B12193B47C000C7ED3E /* BoobieClickerViewController.m in Sources */,
+				38E95F71193B9AAA003F118F /* BoobieImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +450,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoobieClicker/BoobieClicker-Prefix.pch";
 				INFOPLIST_FILE = "BoobieClicker/BoobieClicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,9 +465,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoobieClicker/BoobieClicker-Prefix.pch";
 				INFOPLIST_FILE = "BoobieClicker/BoobieClicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +536,7 @@
 				38144B2C193B47C000C7ED3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38144B2D193B47C000C7ED3E /* Build configuration list for PBXNativeTarget "BoobieClickerTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +545,7 @@
 				38144B2F193B47C000C7ED3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
