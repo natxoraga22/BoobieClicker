@@ -4,31 +4,171 @@
 <array>
 	<dict>
 		<key>imageName</key>
-		<string>boobieGroper</string>
+		<string>dirtyOldMan</string>
 		<key>name</key>
-		<string>Boobie Groper</string>
-		<key>cost</key>
-		<integer>250</integer>
-		<key>slots</key>
-		<integer>1</integer>
-		<key>effectType</key>
-		<integer>0</integer>
-		<key>effectNumber</key>
-		<integer>1</integer>
-	</dict>
-	<dict>
-		<key>imageName</key>
-		<string>handsEnhancer</string>
-		<key>name</key>
-		<string>Hands Enhancer</string>
+		<string>Dirty Old Man</string>
 		<key>cost</key>
 		<integer>350</integer>
 		<key>slots</key>
 		<integer>1</integer>
 		<key>effectType</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>effectNumber</key>
 		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>handEnhancer</string>
+		<key>name</key>
+		<string>Hand Enhancer</string>
+		<key>cost</key>
+		<integer>500</integer>
+		<key>slots</key>
+		<integer>1</integer>
+		<key>effectType</key>
+		<integer>1</integer>
+		<key>effectNumber</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>sexShop</string>
+		<key>name</key>
+		<string>Sex Shop</string>
+		<key>cost</key>
+		<integer>1000</integer>
+		<key>slots</key>
+		<integer>2</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>10</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>boobieFarm</string>
+		<key>name</key>
+		<string>Boobie Farm</string>
+		<key>cost</key>
+		<real>8000</real>
+		<key>slots</key>
+		<integer>2</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>30</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>superHandEnhancer</string>
+		<key>name</key>
+		<string>Super Hand Enhancer</string>
+		<key>cost</key>
+		<integer>15000</integer>
+		<key>slots</key>
+		<integer>1</integer>
+		<key>effectType</key>
+		<integer>1</integer>
+		<key>effectNumber</key>
+		<integer>10</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>plasticSurgeon</string>
+		<key>name</key>
+		<string>Plastic Surgeon</string>
+		<key>cost</key>
+		<real>50000</real>
+		<key>slots</key>
+		<integer>1</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>40</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>ultraHandEnhancer</string>
+		<key>name</key>
+		<string>Ultra Hand Enhancer</string>
+		<key>cost</key>
+		<integer>100000</integer>
+		<key>slots</key>
+		<integer>1</integer>
+		<key>effectType</key>
+		<integer>1</integer>
+		<key>effectNumber</key>
+		<integer>30</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>brothel</string>
+		<key>name</key>
+		<string>Brothel</string>
+		<key>cost</key>
+		<real>200000</real>
+		<key>slots</key>
+		<integer>2</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>100</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>boobieFactory</string>
+		<key>name</key>
+		<string>Boobie Factory</string>
+		<key>cost</key>
+		<real>500000</real>
+		<key>slots</key>
+		<integer>2</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>300</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>megaHandEnhancer</string>
+		<key>name</key>
+		<string>Mega Hand Enhancer</string>
+		<key>cost</key>
+		<integer>1000000</integer>
+		<key>slots</key>
+		<integer>1</integer>
+		<key>effectType</key>
+		<integer>1</integer>
+		<key>effectNumber</key>
+		<integer>100</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>largeBoobieCollider</string>
+		<key>name</key>
+		<string>Large Boobie Collider</string>
+		<key>cost</key>
+		<real>1250000</real>
+		<key>slots</key>
+		<integer>3</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>1000</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>boobieGalaxy</string>
+		<key>name</key>
+		<string>Boobie Galaxy</string>
+		<key>cost</key>
+		<real>3000000</real>
+		<key>slots</key>
+		<integer>5</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<integer>5000</integer>
 	</dict>
 	<dict>
 		<key>imageName</key>
@@ -36,7 +176,7 @@
 		<key>name</key>
 		<string>Slot</string>
 		<key>cost</key>
-		<integer>1000000</integer>
+		<real>5000000</real>
 		<key>slots</key>
 		<integer>0</integer>
 		<key>effectType</key>
@@ -50,13 +190,41 @@
 		<key>name</key>
 		<string>Double Slot</string>
 		<key>cost</key>
-		<real>1750000</real>
+		<real>9000000</real>
 		<key>slots</key>
 		<integer>0</integer>
 		<key>effectType</key>
 		<integer>2</integer>
 		<key>effectNumber</key>
 		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>supermassiveBoobieHole</string>
+		<key>name</key>
+		<string>Supermassive Boobie Hole</string>
+		<key>cost</key>
+		<integer>10000000</integer>
+		<key>slots</key>
+		<integer>10</integer>
+		<key>effectType</key>
+		<integer>0</integer>
+		<key>effectNumber</key>
+		<real>20000</real>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>tripleSlot</string>
+		<key>name</key>
+		<string>Triple Slot</string>
+		<key>cost</key>
+		<real>12000000</real>
+		<key>slots</key>
+		<integer>0</integer>
+		<key>effectType</key>
+		<integer>2</integer>
+		<key>effectNumber</key>
+		<integer>3</integer>
 	</dict>
 </array>
 </plist>

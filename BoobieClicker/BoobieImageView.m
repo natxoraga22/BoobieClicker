@@ -58,4 +58,10 @@ static CGFloat const DEFAULT_CLICKED_SCALE = 0.9f;
     self.layer.transform = CATransform3DIdentity;
 }
 
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{}
+
 @end
