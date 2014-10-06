@@ -45,10 +45,13 @@
 		38144B27193B47C000C7ED3E /* BoobieClickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38144B26193B47C000C7ED3E /* BoobieClickerTests.m */; };
 		38520CFF193FAB7800066303 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520CFE193FAB7800066303 /* iAd.framework */; };
 		387DA90719DFF09700DED016 /* BoobieShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 387DA90619DFF09700DED016 /* BoobieShopManager.m */; };
+		387DA90A19E0023500DED016 /* UILabel+SizeAdjuster.m in Sources */ = {isa = PBXBuildFile; fileRef = 387DA90919E0023500DED016 /* UILabel+SizeAdjuster.m */; };
 		3893B6E0193E46200061C7D0 /* BoobieShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3893B6DF193E46200061C7D0 /* BoobieShop.plist */; };
 		3893B6E5193E50C10061C7D0 /* BoobieShopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893B6E4193E50C10061C7D0 /* BoobieShopView.xib */; };
 		3893B6E7193E53660061C7D0 /* BoobieShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893B6E6193E53660061C7D0 /* BoobieShopTableViewCell.xib */; };
 		3897D15B193D13B9007FCA8C /* BoobieShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897D15A193D13B9007FCA8C /* BoobieShopTableViewCell.m */; };
+		38C2643219E3193E0087EA3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38C2643119E3193E0087EA3A /* LaunchScreen.xib */; };
+		38C2643519E31DF60087EA3A /* BoobieNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C2643419E31DF60087EA3A /* BoobieNumberFormatter.m */; };
 		38E2EEC7193FC1F40019BA96 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E2EEC6193FC1F40019BA96 /* background.png */; };
 		38E95F71193B9AAA003F118F /* BoobieImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E95F70193B9AAA003F118F /* BoobieImageView.m */; };
 /* End PBXBuildFile section */
@@ -109,11 +112,16 @@
 		38520CFE193FAB7800066303 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		387DA90519DFF09700DED016 /* BoobieShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieShopManager.h; sourceTree = "<group>"; };
 		387DA90619DFF09700DED016 /* BoobieShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieShopManager.m; sourceTree = "<group>"; };
+		387DA90819E0023500DED016 /* UILabel+SizeAdjuster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SizeAdjuster.h"; sourceTree = "<group>"; };
+		387DA90919E0023500DED016 /* UILabel+SizeAdjuster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SizeAdjuster.m"; sourceTree = "<group>"; };
 		3893B6DF193E46200061C7D0 /* BoobieShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BoobieShop.plist; sourceTree = "<group>"; };
 		3893B6E4193E50C10061C7D0 /* BoobieShopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoobieShopView.xib; sourceTree = "<group>"; };
 		3893B6E6193E53660061C7D0 /* BoobieShopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoobieShopTableViewCell.xib; sourceTree = "<group>"; };
 		3897D159193D13B9007FCA8C /* BoobieShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieShopTableViewCell.h; sourceTree = "<group>"; };
 		3897D15A193D13B9007FCA8C /* BoobieShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieShopTableViewCell.m; sourceTree = "<group>"; };
+		38C2643119E3193E0087EA3A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		38C2643319E31DF60087EA3A /* BoobieNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieNumberFormatter.h; sourceTree = "<group>"; };
+		38C2643419E31DF60087EA3A /* BoobieNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieNumberFormatter.m; sourceTree = "<group>"; };
 		38E2EEC6193FC1F40019BA96 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		38E95F6F193B9AAA003F118F /* BoobieImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieImageView.h; sourceTree = "<group>"; };
 		38E95F70193B9AAA003F118F /* BoobieImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieImageView.m; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 				38144B0D193B47C000C7ED3E /* Main.storyboard */,
 				3893B6E4193E50C10061C7D0 /* BoobieShopView.xib */,
 				3893B6E6193E53660061C7D0 /* BoobieShopTableViewCell.xib */,
+				38C2643119E3193E0087EA3A /* LaunchScreen.xib */,
 				38144B0A193B47C000C7ED3E /* BoobieClickerAppDelegate.h */,
 				38144B0B193B47C000C7ED3E /* BoobieClickerAppDelegate.m */,
 			);
@@ -271,6 +280,10 @@
 			children = (
 				38144B10193B47C000C7ED3E /* BoobieClickerViewController.h */,
 				38144B11193B47C000C7ED3E /* BoobieClickerViewController.m */,
+				387DA90819E0023500DED016 /* UILabel+SizeAdjuster.h */,
+				387DA90919E0023500DED016 /* UILabel+SizeAdjuster.m */,
+				38C2643319E31DF60087EA3A /* BoobieNumberFormatter.h */,
+				38C2643419E31DF60087EA3A /* BoobieNumberFormatter.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -391,6 +404,7 @@
 			files = (
 				3812615B19D8AFB9002C81F2 /* ultraHandEnhancer.png in Resources */,
 				3893B6E5193E50C10061C7D0 /* BoobieShopView.xib in Resources */,
+				38C2643219E3193E0087EA3A /* LaunchScreen.xib in Resources */,
 				3812617F19DCA545002C81F2 /* slot.png in Resources */,
 				3893B6E0193E46200061C7D0 /* BoobieShop.plist in Resources */,
 				38144B14193B47C000C7ED3E /* Images.xcassets in Resources */,
@@ -441,7 +455,9 @@
 				387DA90719DFF09700DED016 /* BoobieShopManager.m in Sources */,
 				38059C1F193F60290036DA2A /* BoobieClickerModel.m in Sources */,
 				38144B12193B47C000C7ED3E /* BoobieClickerViewController.m in Sources */,
+				38C2643519E31DF60087EA3A /* BoobieNumberFormatter.m in Sources */,
 				38E95F71193B9AAA003F118F /* BoobieImageView.m in Sources */,
+				387DA90A19E0023500DED016 /* UILabel+SizeAdjuster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -555,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -571,7 +587,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoobieClicker/BoobieClicker-Prefix.pch";
 				INFOPLIST_FILE = "BoobieClicker/BoobieClicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -588,7 +604,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BoobieClicker/BoobieClicker-Prefix.pch";
 				INFOPLIST_FILE = "BoobieClicker/BoobieClicker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

@@ -12,6 +12,8 @@
 #import "BoobieImageViewDelegate.h"
 #import "BoobieShopTableViewCell.h"
 #import "BoobieShopManager.h"
+#import "UILabel+SizeAdjuster.h"
+#import "BoobieNumberFormatter.h"
 
 
 @interface BoobieClickerViewController() <BoobieImageViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -53,7 +55,6 @@ static NSString *const RIGHT_BOOBIE_IMAGE_NAME = @"smallRightBoobie";
     
     // Starting where we left off
     [self.model reloadBoobieModifiers];
-    [self setBoobieCount:[self.model getBoobieCount] boobiesPerSecond:[self.model getBoobiesPerSecond]];
     
     // Increment boobieCount every second depending on boobiesPerSecond
     [NSTimer scheduledTimerWithTimeInterval:1.0f
@@ -61,6 +62,12 @@ static NSString *const RIGHT_BOOBIE_IMAGE_NAME = @"smallRightBoobie";
                                    selector:@selector(incrementBoobieCountByBoobiesPerSecond)
                                    userInfo:nil
                                     repeats:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // Starting where we left off
+    [self setBoobieCount:[self.model getBoobieCount] boobiesPerSecond:[self.model getBoobiesPerSecond]];
 }
 
 #pragma mark - Getters
@@ -97,23 +104,37 @@ static CGFloat const BOOBIE_SHOP_CONTROL_FONT_SIZE = 18.0f;
 
 #pragma mark - Setters
 
+static CGFloat const BOOBIE_COUNT_LABEL_FONT_SIZE = 36.0f;
 static CGFloat const BOOBIES_PER_SECOND_LABEL_FONT_SIZE = 18.0f;
-static CGFloat const BOOBIE_COUNT_LABEL_LINE_SPACING = 0.75f;
-static CGFloat const BOOBIE_COUNT_LABEL_PARAGRAPH_SPACING = 2.0f;
+static CGFloat const BOOBIE_LABEL_LINE_SPACING = 0.0f;
+static CGFloat const BOOBIE_LABEL_PARAGRAPH_SPACING = 5.0f;
 
 - (void)setBoobieCount:(NSUInteger)boobieCount boobiesPerSecond:(NSUInteger)boobiesPerSecond
 {
-    NSNumberFormatter *formatter = [self boobiesFormatter];
-    NSString *boobiesString = [NSString stringWithFormat:@"%@ Boobies\n", [formatter stringFromNumber:@(boobieCount)]];
-    NSString *boobiesPerSecondString = [NSString stringWithFormat:@"%@ boobies/second", [formatter stringFromNumber:@(boobiesPerSecond)]];
+    NSString *separator = @"";
+    if (boobieCount >= 1000000) separator = @" ";
+    NSString *formattedBoobieCount = [BoobieNumberFormatter stringFromNumber:@(boobieCount)];
+    NSString *formattedBoobiesPerSecond = [BoobieNumberFormatter stringFromNumber:@(boobiesPerSecond)];
+    NSString *boobiesString = [NSString stringWithFormat:@"%@%@ Boobies\n", formattedBoobieCount, separator];
+    NSString *boobiesPerSecondString = [NSString stringWithFormat:@"%@ boobies/second", formattedBoobiesPerSecond];
     
     NSMutableAttributedString *boobiesAttrString = [[NSMutableAttributedString alloc] initWithString:boobiesString];
     NSMutableAttributedString *boobiesPerSecondAttrString = [[NSMutableAttributedString alloc] initWithString:boobiesPerSecondString];
     
+    // Chalkboard SE Bold 36.0f Font
+    NSString *fontName = [NSString stringWithFormat:@"%@-Bold", BOOBIE_CLICKER_FONT];
+    UIFont *font = [UIFont fontWithName:fontName size:BOOBIE_COUNT_LABEL_FONT_SIZE];
+    CGFloat fontSize = [self.boobieCountLabel requiredFontSizeWithFont:font andText:formattedBoobieCount];
+    [boobiesAttrString addAttribute:NSFontAttributeName
+                              value:[font fontWithSize:fontSize]
+                              range:NSMakeRange(0, [boobiesAttrString length])];
+    
     // Chalkboard SE Light 18.0f Font
-    NSString *fontName = [NSString stringWithFormat:@"%@-Light", BOOBIE_CLICKER_FONT];
+    fontName = [NSString stringWithFormat:@"%@-Light", BOOBIE_CLICKER_FONT];
+    font = [UIFont fontWithName:fontName size:BOOBIES_PER_SECOND_LABEL_FONT_SIZE];
+    fontSize = [self.boobieCountLabel requiredFontSizeWithFont:font andText:boobiesPerSecondString];
     [boobiesPerSecondAttrString addAttribute:NSFontAttributeName
-                                       value:[UIFont fontWithName:fontName size:BOOBIES_PER_SECOND_LABEL_FONT_SIZE]
+                                       value:[font fontWithSize:fontSize]
                                        range:NSMakeRange(0, [boobiesPerSecondString length])];
     
     NSMutableAttributedString *resultString = [[NSMutableAttributedString alloc] initWithAttributedString:boobiesAttrString];
@@ -123,8 +144,8 @@ static CGFloat const BOOBIE_COUNT_LABEL_PARAGRAPH_SPACING = 2.0f;
     NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     paragraphStyle.alignment = NSTextAlignmentCenter;
     paragraphStyle.maximumLineHeight = 36.0f;
-    paragraphStyle.lineSpacing = BOOBIE_COUNT_LABEL_LINE_SPACING;
-    paragraphStyle.paragraphSpacing = BOOBIE_COUNT_LABEL_PARAGRAPH_SPACING;
+    paragraphStyle.lineSpacing = BOOBIE_LABEL_LINE_SPACING;
+    paragraphStyle.paragraphSpacing = BOOBIE_LABEL_PARAGRAPH_SPACING;
     [resultString addAttribute:NSParagraphStyleAttributeName
                          value:paragraphStyle
                          range:NSMakeRange(0, [boobiesString length] + [boobiesPerSecondString length])];
@@ -166,10 +187,9 @@ static CGFloat const MORE_BOOBIES_LABEL_ANIMATION_DISTANCE = 125.0f;
     CGFloat endingXOffset = arc4random_uniform(MORE_BOOBIES_LABEL_X_OFFSET) - MORE_BOOBIES_LABEL_X_OFFSET/2.0f;
     
     // Start position
-    NSNumberFormatter *formatter = [self boobiesFormatter];
-    NSString *labelText = [NSString stringWithFormat:@"+%@", [formatter stringFromNumber:@(number)]];
+    NSString *labelText = [NSString stringWithFormat:@"+%@", [BoobieNumberFormatter stringFromNumber:@(number)]];
     UIFont *labelFont = [UIFont fontWithName:[NSString stringWithFormat:@"%@-Bold", BOOBIE_CLICKER_FONT] size:MORE_BOOBIES_LABEL_SIZE];
-    CGSize expectedSize = [labelText sizeWithFont:labelFont];
+    CGSize expectedSize = [labelText sizeWithAttributes:@{NSFontAttributeName : labelFont}];
     UILabel *moreBoobiesLabel = [[UILabel alloc] initWithFrame:CGRectMake(startPosition.x - expectedSize.width/2.0f,
                                                                           startPosition.y - expectedSize.height/2.0f,
                                                                           expectedSize.width, expectedSize.height)];
@@ -236,10 +256,9 @@ static CGFloat const PAYED_BOOBIES_LABEL_ANIMATION_DISTANCE = 30.0f;
     CGPoint startPosition = CGPointMake(self.boobieCountLabel.frame.origin.x + self.boobieCountLabel.frame.size.width/2.0f,
                                         self.boobieCountLabel.frame.origin.y + self.boobieCountLabel.frame.size.height/10.0f);
     
-    NSNumberFormatter *formatter = [self boobiesFormatter];
-    NSString *labelText = [NSString stringWithFormat:@"-%@ Boobies", [formatter stringFromNumber:@(value)]];
+    NSString *labelText = [NSString stringWithFormat:@"-%@ Boobies", [BoobieNumberFormatter stringFromNumber:@(value)]];
     UIFont *labelFont = [UIFont fontWithName:[NSString stringWithFormat:@"%@-Bold", BOOBIE_CLICKER_FONT] size:PAYED_BOOBIES_LABEL_SIZE];
-    CGSize expectedSize = [labelText sizeWithFont:labelFont];
+    CGSize expectedSize = [labelText sizeWithAttributes:@{NSFontAttributeName : labelFont}];
     UILabel *payedBoobiesLabel = [[UILabel alloc] initWithFrame:CGRectMake(startPosition.x - expectedSize.width/2.0f,
                                                                            startPosition.y - expectedSize.height/2.0f,
                                                                            expectedSize.width, expectedSize.height)];
@@ -338,12 +357,13 @@ static CGFloat const BOOBIE_SHOP_ITEM_CELL_HEIGHT = 64.0f;
     
     cell.itemImageView.image = [UIImage imageNamed:item[BOOBIE_SHOP_ITEM_IMAGE_NAME_KEY]];
     cell.itemNameLabel.text = item[BOOBIE_SHOP_ITEM_NAME_KEY];
-    NSNumberFormatter *formatter = [self boobiesFormatter];
-    cell.itemCostLabel.text = [NSString stringWithFormat:@"Cost: %@ boobies", [formatter stringFromNumber:item[BOOBIE_SHOP_ITEM_COST_KEY]]];
+    NSString *boobieCost = [BoobieNumberFormatter stringFromNumber:item[BOOBIE_SHOP_ITEM_COST_KEY]];
+    cell.itemCostLabel.text = [NSString stringWithFormat:@"Cost: %@ boobies", boobieCost];
     NSString *slots = [item[BOOBIE_SHOP_ITEM_SLOTS_KEY] integerValue] == 1 ? @"slot" : @"slots";
     cell.itemSlotsLabel.text = [NSString stringWithFormat:@"%@ %@", item[BOOBIE_SHOP_ITEM_SLOTS_KEY], slots];
     NSString *effectType = [self stringForEffectType:item[BOOBIE_SHOP_ITEM_EFFECT_TYPE_KEY]];
-    cell.itemEffectLabel.text = [NSString stringWithFormat:@"%@: %@", effectType, item[BOOBIE_SHOP_ITEM_EFFECT_NUMBER_KEY]];
+    NSString *effectNumber = [BoobieNumberFormatter stringFromNumber:item[BOOBIE_SHOP_ITEM_EFFECT_NUMBER_KEY]];
+    cell.itemEffectLabel.text = [NSString stringWithFormat:@"%@: %@", effectType, effectNumber];
     NSUInteger itemCount = [self.model getItemCountOfName:item[BOOBIE_SHOP_ITEM_NAME_KEY]];
     cell.itemCountLabel.text = [NSString stringWithFormat:@"Items: %lu", (unsigned long)itemCount];
     
@@ -461,19 +481,6 @@ static CGFloat const BOOBIE_SHOP_ITEM_CELL_HEIGHT = 64.0f;
         // Reload table
         [self.boobieShopTableView reloadData];
     }
-}
-
-#pragma mark - Utility methods
-
-- (NSNumberFormatter *)boobiesFormatter
-{
-    // Number formatter
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    formatter.groupingSeparator = @".";
-    formatter.groupingSize = 3;
-    formatter.usesGroupingSeparator = YES;
-    
-    return formatter;
 }
 
 @end
