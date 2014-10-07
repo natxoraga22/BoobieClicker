@@ -371,29 +371,41 @@ static CGFloat const BOOBIE_SHOP_ITEM_CELL_HEIGHT = 64.0f;
     selectionColor.backgroundColor = [UIColor colorWithRed:(230.0/255.0) green:(200.0/255.0) blue:(185.0/255.0) alpha:1.0];
     cell.selectedBackgroundView = selectionColor;
     
-    // Disable cell
-    if ((self.boobieShopControl.selectedSegmentIndex == 0 &&
-        [self.model getBoobieCount] < [item[BOOBIE_SHOP_ITEM_COST_KEY] integerValue]) ||
-        ((self.boobieShopControl.selectedSegmentIndex == 1) &&
-        [self.model getItemCountOfName:item[BOOBIE_SHOP_ITEM_NAME_KEY]] == 0)) {
-        cell.userInteractionEnabled = NO;
-        cell.itemNameLabel.enabled = NO;
-        cell.itemCostLabel.enabled = NO;
-        cell.itemSlotsLabel.enabled = NO;
-        cell.itemEffectLabel.enabled = NO;
-        cell.itemCountLabel.enabled = NO;
+    // Buy list
+    if (self.boobieShopControl.selectedSegmentIndex == 0) {
+        if ([self.model getBoobieCount] < [item[BOOBIE_SHOP_ITEM_COST_KEY] integerValue]) [self disableCell:cell];
+        else [self enableCell:cell];
     }
-    // Enable cell
-    else {
-        cell.userInteractionEnabled = YES;
-        cell.itemNameLabel.enabled = YES;
-        cell.itemCostLabel.enabled = YES;
-        cell.itemSlotsLabel.enabled = YES;
-        cell.itemEffectLabel.enabled = YES;
-        cell.itemCountLabel.enabled = YES;
+    // Remove list
+    else if (self.boobieShopControl.selectedSegmentIndex == 1) {
+        if ([self.model getItemCountOfName:item[BOOBIE_SHOP_ITEM_NAME_KEY]] == 0 ||
+            [item[BOOBIE_SHOP_ITEM_EFFECT_TYPE_KEY] integerValue] == 2) {
+            [self disableCell:cell];
+        }
+        else [self enableCell:cell];
     }
     
     return cell;
+}
+
+- (void)enableCell:(BoobieShopTableViewCell *)cell
+{
+    cell.userInteractionEnabled = YES;
+    cell.itemNameLabel.enabled = YES;
+    cell.itemCostLabel.enabled = YES;
+    cell.itemSlotsLabel.enabled = YES;
+    cell.itemEffectLabel.enabled = YES;
+    cell.itemCountLabel.enabled = YES;
+}
+
+- (void)disableCell:(BoobieShopTableViewCell *)cell
+{
+    cell.userInteractionEnabled = NO;
+    cell.itemNameLabel.enabled = NO;
+    cell.itemCostLabel.enabled = NO;
+    cell.itemSlotsLabel.enabled = NO;
+    cell.itemEffectLabel.enabled = NO;
+    cell.itemCountLabel.enabled = NO;
 }
 
 - (NSString *)stringForEffectType:(NSNumber *)type
@@ -482,5 +494,10 @@ static CGFloat const BOOBIE_SHOP_ITEM_CELL_HEIGHT = 64.0f;
         [self.boobieShopTableView reloadData];
     }
 }
+
+/*- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}*/
 
 @end
