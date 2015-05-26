@@ -9,22 +9,14 @@
 /* Begin PBXBuildFile section */
 		38059C1F193F60290036DA2A /* BoobieClickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38059C1E193F60290036DA2A /* BoobieClickerModel.m */; };
 		3812614C19D8AE3D002C81F2 /* boobieFactory.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812614B19D8AE3D002C81F2 /* boobieFactory.png */; };
-		3812614E19D8AF66002C81F2 /* dirtyOldMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812614D19D8AF66002C81F2 /* dirtyOldMan.png */; };
 		3812615019D8AF70002C81F2 /* handEnhancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812614F19D8AF70002C81F2 /* handEnhancer.png */; };
 		3812615219D8AF79002C81F2 /* sexShop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615119D8AF79002C81F2 /* sexShop.png */; };
-		3812615419D8AF84002C81F2 /* boobieFarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615319D8AF84002C81F2 /* boobieFarm.png */; };
 		3812615619D8AF8D002C81F2 /* superHandEnhancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615519D8AF8D002C81F2 /* superHandEnhancer.png */; };
 		3812615919D8AFAC002C81F2 /* plasticSurgeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615819D8AFAC002C81F2 /* plasticSurgeon.png */; };
 		3812615B19D8AFB9002C81F2 /* ultraHandEnhancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615A19D8AFB9002C81F2 /* ultraHandEnhancer.png */; };
 		3812615D19D8B048002C81F2 /* brothel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615C19D8B048002C81F2 /* brothel.png */; };
 		3812615F19D8B051002C81F2 /* megaHandEnhancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812615E19D8B051002C81F2 /* megaHandEnhancer.png */; };
 		3812616519D8B284002C81F2 /* boobieShop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616019D8B284002C81F2 /* boobieShop.png */; };
-		3812616619D8B284002C81F2 /* leftBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616119D8B284002C81F2 /* leftBoobie.png */; };
-		3812616719D8B284002C81F2 /* rightBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616219D8B284002C81F2 /* rightBoobie.png */; };
-		3812616819D8B284002C81F2 /* smallLeftBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616319D8B284002C81F2 /* smallLeftBoobie.png */; };
-		3812616919D8B284002C81F2 /* smallRightBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616419D8B284002C81F2 /* smallRightBoobie.png */; };
-		3812616B19D8B6D6002C81F2 /* largeBoobieCollider.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812616A19D8B6D6002C81F2 /* largeBoobieCollider.png */; };
-		3812617319DC9219002C81F2 /* boobieGalaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812617219DC9219002C81F2 /* boobieGalaxy.png */; };
 		3812617519DC9FDB002C81F2 /* supermassiveBoobieHole.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812617419DC9FDB002C81F2 /* supermassiveBoobieHole.png */; };
 		3812617E19DCA545002C81F2 /* doubleSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812617C19DCA545002C81F2 /* doubleSlot.png */; };
 		3812617F19DCA545002C81F2 /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3812617D19DCA545002C81F2 /* slot.png */; };
@@ -43,6 +35,14 @@
 		38144B1D193B47C000C7ED3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38144AFF193B47C000C7ED3E /* UIKit.framework */; };
 		38144B25193B47C000C7ED3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38144B23193B47C000C7ED3E /* InfoPlist.strings */; };
 		38144B27193B47C000C7ED3E /* BoobieClickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38144B26193B47C000C7ED3E /* BoobieClickerTests.m */; };
+		3841F4C51B152D6700ACB5C6 /* leftBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4C11B152D6700ACB5C6 /* leftBoobie.png */; };
+		3841F4C61B152D6700ACB5C6 /* rightBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4C21B152D6700ACB5C6 /* rightBoobie.png */; };
+		3841F4C71B152D6700ACB5C6 /* smallLeftBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4C31B152D6700ACB5C6 /* smallLeftBoobie.png */; };
+		3841F4C81B152D6700ACB5C6 /* smallRightBoobie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4C41B152D6700ACB5C6 /* smallRightBoobie.png */; };
+		3841F4CA1B15319900ACB5C6 /* dirtyOldMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4C91B15319900ACB5C6 /* dirtyOldMan.png */; };
+		3841F4CC1B15327D00ACB5C6 /* boobieFarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4CB1B15327D00ACB5C6 /* boobieFarm.png */; };
+		3841F4CE1B1533E500ACB5C6 /* largeBoobieCollider.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4CD1B1533E500ACB5C6 /* largeBoobieCollider.png */; };
+		3841F4D01B15348F00ACB5C6 /* boobieGalaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3841F4CF1B15348F00ACB5C6 /* boobieGalaxy.png */; };
 		38520CFF193FAB7800066303 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38520CFE193FAB7800066303 /* iAd.framework */; };
 		387DA90719DFF09700DED016 /* BoobieShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 387DA90619DFF09700DED016 /* BoobieShopManager.m */; };
 		387DA90A19E0023500DED016 /* UILabel+SizeAdjuster.m in Sources */ = {isa = PBXBuildFile; fileRef = 387DA90919E0023500DED016 /* UILabel+SizeAdjuster.m */; };
@@ -70,22 +70,14 @@
 		38059C1D193F60290036DA2A /* BoobieClickerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieClickerModel.h; sourceTree = "<group>"; };
 		38059C1E193F60290036DA2A /* BoobieClickerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieClickerModel.m; sourceTree = "<group>"; };
 		3812614B19D8AE3D002C81F2 /* boobieFactory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieFactory.png; sourceTree = "<group>"; };
-		3812614D19D8AF66002C81F2 /* dirtyOldMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirtyOldMan.png; sourceTree = "<group>"; };
 		3812614F19D8AF70002C81F2 /* handEnhancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handEnhancer.png; sourceTree = "<group>"; };
 		3812615119D8AF79002C81F2 /* sexShop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sexShop.png; sourceTree = "<group>"; };
-		3812615319D8AF84002C81F2 /* boobieFarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieFarm.png; sourceTree = "<group>"; };
 		3812615519D8AF8D002C81F2 /* superHandEnhancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superHandEnhancer.png; sourceTree = "<group>"; };
 		3812615819D8AFAC002C81F2 /* plasticSurgeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plasticSurgeon.png; sourceTree = "<group>"; };
 		3812615A19D8AFB9002C81F2 /* ultraHandEnhancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ultraHandEnhancer.png; sourceTree = "<group>"; };
 		3812615C19D8B048002C81F2 /* brothel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brothel.png; sourceTree = "<group>"; };
 		3812615E19D8B051002C81F2 /* megaHandEnhancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megaHandEnhancer.png; sourceTree = "<group>"; };
 		3812616019D8B284002C81F2 /* boobieShop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieShop.png; sourceTree = "<group>"; };
-		3812616119D8B284002C81F2 /* leftBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftBoobie.png; sourceTree = "<group>"; };
-		3812616219D8B284002C81F2 /* rightBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightBoobie.png; sourceTree = "<group>"; };
-		3812616319D8B284002C81F2 /* smallLeftBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallLeftBoobie.png; sourceTree = "<group>"; };
-		3812616419D8B284002C81F2 /* smallRightBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallRightBoobie.png; sourceTree = "<group>"; };
-		3812616A19D8B6D6002C81F2 /* largeBoobieCollider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largeBoobieCollider.png; sourceTree = "<group>"; };
-		3812617219DC9219002C81F2 /* boobieGalaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieGalaxy.png; sourceTree = "<group>"; };
 		3812617419DC9FDB002C81F2 /* supermassiveBoobieHole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supermassiveBoobieHole.png; sourceTree = "<group>"; };
 		3812617C19DCA545002C81F2 /* doubleSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleSlot.png; sourceTree = "<group>"; };
 		3812617D19DCA545002C81F2 /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
@@ -109,6 +101,14 @@
 		38144B22193B47C000C7ED3E /* BoobieClickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoobieClickerTests-Info.plist"; sourceTree = "<group>"; };
 		38144B24193B47C000C7ED3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38144B26193B47C000C7ED3E /* BoobieClickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoobieClickerTests.m; sourceTree = "<group>"; };
+		3841F4C11B152D6700ACB5C6 /* leftBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftBoobie.png; sourceTree = "<group>"; };
+		3841F4C21B152D6700ACB5C6 /* rightBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightBoobie.png; sourceTree = "<group>"; };
+		3841F4C31B152D6700ACB5C6 /* smallLeftBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallLeftBoobie.png; sourceTree = "<group>"; };
+		3841F4C41B152D6700ACB5C6 /* smallRightBoobie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallRightBoobie.png; sourceTree = "<group>"; };
+		3841F4C91B15319900ACB5C6 /* dirtyOldMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirtyOldMan.png; sourceTree = "<group>"; };
+		3841F4CB1B15327D00ACB5C6 /* boobieFarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieFarm.png; sourceTree = "<group>"; };
+		3841F4CD1B1533E500ACB5C6 /* largeBoobieCollider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largeBoobieCollider.png; sourceTree = "<group>"; };
+		3841F4CF1B15348F00ACB5C6 /* boobieGalaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boobieGalaxy.png; sourceTree = "<group>"; };
 		38520CFE193FAB7800066303 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		387DA90519DFF09700DED016 /* BoobieShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoobieShopManager.h; sourceTree = "<group>"; };
 		387DA90619DFF09700DED016 /* BoobieShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoobieShopManager.m; sourceTree = "<group>"; };
@@ -167,18 +167,18 @@
 		3812613A19D88B7E002C81F2 /* BoobieShopItems */ = {
 			isa = PBXGroup;
 			children = (
-				3812614D19D8AF66002C81F2 /* dirtyOldMan.png */,
+				3841F4C91B15319900ACB5C6 /* dirtyOldMan.png */,
 				3812614F19D8AF70002C81F2 /* handEnhancer.png */,
 				3812615119D8AF79002C81F2 /* sexShop.png */,
-				3812615319D8AF84002C81F2 /* boobieFarm.png */,
+				3841F4CB1B15327D00ACB5C6 /* boobieFarm.png */,
 				3812615519D8AF8D002C81F2 /* superHandEnhancer.png */,
 				3812615819D8AFAC002C81F2 /* plasticSurgeon.png */,
 				3812615A19D8AFB9002C81F2 /* ultraHandEnhancer.png */,
 				3812615C19D8B048002C81F2 /* brothel.png */,
 				3812614B19D8AE3D002C81F2 /* boobieFactory.png */,
 				3812615E19D8B051002C81F2 /* megaHandEnhancer.png */,
-				3812616A19D8B6D6002C81F2 /* largeBoobieCollider.png */,
-				3812617219DC9219002C81F2 /* boobieGalaxy.png */,
+				3841F4CD1B1533E500ACB5C6 /* largeBoobieCollider.png */,
+				3841F4CF1B15348F00ACB5C6 /* boobieGalaxy.png */,
 				3812617D19DCA545002C81F2 /* slot.png */,
 				3812617C19DCA545002C81F2 /* doubleSlot.png */,
 				3812617419DC9FDB002C81F2 /* supermassiveBoobieHole.png */,
@@ -291,11 +291,11 @@
 		3893B6E1193E4AD90061C7D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3841F4C11B152D6700ACB5C6 /* leftBoobie.png */,
+				3841F4C21B152D6700ACB5C6 /* rightBoobie.png */,
+				3841F4C31B152D6700ACB5C6 /* smallLeftBoobie.png */,
+				3841F4C41B152D6700ACB5C6 /* smallRightBoobie.png */,
 				3812616019D8B284002C81F2 /* boobieShop.png */,
-				3812616119D8B284002C81F2 /* leftBoobie.png */,
-				3812616219D8B284002C81F2 /* rightBoobie.png */,
-				3812616319D8B284002C81F2 /* smallLeftBoobie.png */,
-				3812616419D8B284002C81F2 /* smallRightBoobie.png */,
 				38E2EEC6193FC1F40019BA96 /* background.png */,
 				3893B6DF193E46200061C7D0 /* BoobieShop.plist */,
 				3812613A19D88B7E002C81F2 /* BoobieShopItems */,
@@ -408,28 +408,28 @@
 				3812617F19DCA545002C81F2 /* slot.png in Resources */,
 				3893B6E0193E46200061C7D0 /* BoobieShop.plist in Resources */,
 				38144B14193B47C000C7ED3E /* Images.xcassets in Resources */,
-				3812615419D8AF84002C81F2 /* boobieFarm.png in Resources */,
 				3812615D19D8B048002C81F2 /* brothel.png in Resources */,
 				3812617E19DCA545002C81F2 /* doubleSlot.png in Resources */,
 				3812615919D8AFAC002C81F2 /* plasticSurgeon.png in Resources */,
 				3812615619D8AF8D002C81F2 /* superHandEnhancer.png in Resources */,
+				3841F4D01B15348F00ACB5C6 /* boobieGalaxy.png in Resources */,
 				38144B06193B47C000C7ED3E /* InfoPlist.strings in Resources */,
 				3812618119DCA54F002C81F2 /* tripleSlot.png in Resources */,
+				3841F4C81B152D6700ACB5C6 /* smallRightBoobie.png in Resources */,
 				3812616519D8B284002C81F2 /* boobieShop.png in Resources */,
 				3812615219D8AF79002C81F2 /* sexShop.png in Resources */,
+				3841F4C61B152D6700ACB5C6 /* rightBoobie.png in Resources */,
 				3812615F19D8B051002C81F2 /* megaHandEnhancer.png in Resources */,
 				3812617519DC9FDB002C81F2 /* supermassiveBoobieHole.png in Resources */,
-				3812616719D8B284002C81F2 /* rightBoobie.png in Resources */,
-				3812616619D8B284002C81F2 /* leftBoobie.png in Resources */,
+				3841F4C71B152D6700ACB5C6 /* smallLeftBoobie.png in Resources */,
 				3812614C19D8AE3D002C81F2 /* boobieFactory.png in Resources */,
+				3841F4CA1B15319900ACB5C6 /* dirtyOldMan.png in Resources */,
+				3841F4C51B152D6700ACB5C6 /* leftBoobie.png in Resources */,
+				3841F4CC1B15327D00ACB5C6 /* boobieFarm.png in Resources */,
 				3893B6E7193E53660061C7D0 /* BoobieShopTableViewCell.xib in Resources */,
-				3812616B19D8B6D6002C81F2 /* largeBoobieCollider.png in Resources */,
-				3812616919D8B284002C81F2 /* smallRightBoobie.png in Resources */,
+				3841F4CE1B1533E500ACB5C6 /* largeBoobieCollider.png in Resources */,
 				3812615019D8AF70002C81F2 /* handEnhancer.png in Resources */,
-				3812617319DC9219002C81F2 /* boobieGalaxy.png in Resources */,
 				38E2EEC7193FC1F40019BA96 /* background.png in Resources */,
-				3812616819D8B284002C81F2 /* smallLeftBoobie.png in Resources */,
-				3812614E19D8AF66002C81F2 /* dirtyOldMan.png in Resources */,
 				38144B0F193B47C000C7ED3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

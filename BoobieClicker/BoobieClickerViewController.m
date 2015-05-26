@@ -197,7 +197,8 @@ static CGFloat const MORE_BOOBIES_LABEL_ANIMATION_DISTANCE = 125.0f;
     moreBoobiesLabel.font = labelFont;
     moreBoobiesLabel.textColor = [UIColor redColor];
     moreBoobiesLabel.backgroundColor = [UIColor clearColor];
-    [self.view.subviews[0] addSubview:moreBoobiesLabel];
+    //[self.view.subviews[0] addSubview:moreBoobiesLabel];
+    [self.view addSubview:moreBoobiesLabel];
     
     // Animate
     [UIView animateWithDuration:MORE_BOOBIES_LABEL_ANIMATION_DURATION
