@@ -15,13 +15,11 @@
 {
     CGFloat fontSize = font.pointSize;
     
-    BOOL found = NO;
     while (YES) {
         if (font.pointSize != fontSize) {
             font = [font fontWithSize:fontSize];
         }
         if ([self wouldThisFont:font workForThisLabel:self andThisText:text]) {
-            found = YES;
             break;
         }
         fontSize -= 0.5;

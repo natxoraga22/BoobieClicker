@@ -66,6 +66,8 @@ static NSString *const RIGHT_BOOBIE_IMAGE_NAME = @"smallRightBoobie";
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
+    
     // Starting where we left off
     [self setBoobieCount:[self.model getBoobieCount] boobiesPerSecond:[self.model getBoobiesPerSecond]];
 }
